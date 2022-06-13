@@ -1,7 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { InjectModel } from "@nestjs/mongoose";
 import { DocumentDefinition, FilterQuery, Model, QueryOptions, UpdateQuery } from "mongoose";
-import { CatsDto } from "./dto";
 import { Cat, CatDocument } from "./schema/cat.schema";
 
 @Injectable()
