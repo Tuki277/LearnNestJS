@@ -28,7 +28,7 @@ export class UserService {
     return this.userModel.findOne(query, {}, options);
   }
 
-  async updateCat (query: FilterQuery<UserDocument>, update: UpdateQuery<UserDocument>, options: QueryOptions) {
+  async updateUser (query: FilterQuery<UserDocument>, update: UpdateQuery<UserDocument>, options: QueryOptions) {
     return this.userModel.findOneAndUpdate(query, update, options);
   }
 

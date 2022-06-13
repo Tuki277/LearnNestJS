@@ -21,6 +21,9 @@ export class User {
 
   @Prop({ required: true })
   PhoneNumber: string
+
+  @Prop({ default: null })
+  AccessToken: string
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);

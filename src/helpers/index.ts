@@ -9,3 +9,13 @@ export const hashPassword = async (password: string) => {
     console.log(error);
   }
 }
+
+export const jsonResponse = (error: boolean, message: string, data?: any) => {
+  return {
+    "result": {
+      error,
+      data,
+      message
+    }
+  }
+}

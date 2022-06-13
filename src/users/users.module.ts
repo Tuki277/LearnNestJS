@@ -13,7 +13,7 @@ import { UserService } from "./users.service";
     MongooseModule.forFeature([{ name: User.name, schema: UserSchema }]),
     JwtModule.register({
       secret: jwtConstants.secret,
-      signOptions: { expiresIn: '1y'}
+      signOptions: { expiresIn: '15m'}
     }),
     PassportModule
   ],
